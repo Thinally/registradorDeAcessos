@@ -14,6 +14,7 @@ import java.util.List;
 public class AccessController {
 
     AccessRepository accessRepository;
+    @CrossOrigin(origins = "*")
     @GetMapping("/access")
     public Long getAllAccess(HttpServletRequest request) {
         Access access = new Access();
